@@ -12,6 +12,22 @@ enum Suit {
             return "clubs"
         }
     }
+    func color() -> String {
+        switch self{
+        case .Spades:
+            return "black"
+        case .Clubs:
+            return "black"
+        case .Hearts:
+            return "red"
+        case .Diamonds:
+            return "red"
+        }
+    }
 }
+
 let hearts = Suit.Hearts
+let heartColor = hearts.color()
 let heartsDescription = hearts.simpleDescription()
+
+

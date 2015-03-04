@@ -19,3 +19,21 @@ enum Rank: Int {
 }
 let ace = Rank.Ace
 let aceRawValue = ace.rawValue
+
+func compareValues(rank1: Rank, rank2: Rank) -> Rank
+{
+    var higherValue:Rank
+    
+    if rank1.rawValue > rank2.rawValue
+    {
+        higherValue = rank1
+    }else{
+        higherValue = rank2
+    }
+    
+    return higherValue
+    
+}
+
+let jack = Rank.Jack
+let higherValue = compareValues(ace, jack).rawValue

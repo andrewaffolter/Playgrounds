@@ -1,4 +1,4 @@
-func greet(name: String, day: String) -> String {
-    return "Hello \(name), today is \(day)."
+func greet(name: String, lunchSpecial: String) -> String {
+    return "Hello \(name), today's lunch special is \(lunchSpecial)."
 }
-greet("Bob", "Tuesday")
+greet("Bob", "Fish")

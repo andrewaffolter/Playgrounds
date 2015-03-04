@@ -9,3 +9,4 @@ case let x where x.hasSuffix("pepper"):
 default:
     let vegetableComment = "Everything tastes good in soup."
 }
+//if you remove the default case it says that switch must be exhaustive, consider adding a default clause
