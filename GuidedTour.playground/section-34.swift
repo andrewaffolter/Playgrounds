@@ -1,3 +1,4 @@
+//the 3 values in the return statement are the tuple.
 func calculateStatistics(scores: [Int]) -> (min: Int, max: Int, sum: Int) {
     var min = scores[0]
     var max = scores[0]

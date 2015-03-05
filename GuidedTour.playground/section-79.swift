@@ -18,3 +18,33 @@ struct SimpleStructure: ExampleProtocol {
 var b = SimpleStructure()
 b.adjust()
 let bDescription = b.simpleDescription
+
+enum ExampleEnum : ExampleProtocol{
+    case Base, Adjusted
+    
+    var simpleDescription: String { get {
+        return self.getDescription()
+        }
+    }
+    
+    func getDescription() -> String{
+        switch self{
+        case Base:
+            return "A simple description of enum"
+        case .Adjusted:
+            return "Adjusted description of enum"
+        default:
+            return "default description"
+        }
+    }
+    
+    mutating func adjust() -> Void{
+        self = ExampleEnum.Adjusted
+    }
+    
+}
+
+var c = ExampleEnum.Base
+c.adjust()
+let cDescription = c.simpleDescription
+

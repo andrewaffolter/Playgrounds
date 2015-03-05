@@ -7,3 +7,19 @@ extension Int: ExampleProtocol {
     }
 }
 7.simpleDescription
+
+//extending double to give it an absolute value function
+extension Double{
+    
+    var absoluteValue: Double {
+        if self < 0{
+            return self
+        }else{
+            return self * -1
+        }
+        
+    }
+}
+
+-1.8.absoluteValue
+

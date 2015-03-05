@@ -1,3 +1,4 @@
+//in this case there isn't a meaningful raw number to each of the types of this enum so we don't need to specify one
 enum Suit {
     case Spades, Hearts, Diamonds, Clubs
     func simpleDescription() -> String {

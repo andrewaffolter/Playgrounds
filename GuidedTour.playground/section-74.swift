@@ -13,6 +13,6 @@ case let .Result(sunrise, sunset):
     let serverResponse = "Sunrise is at \(sunrise) and sunset is at \(sunset)."
 case let .Error(error):
     let serverResponse = "Failure...  \(error)"
-case let .ResponseCode(code)
+case let .ResponseCode(code):
     let serverResponseCode = "Server response code is \(code)"
 }

@@ -1,7 +1,9 @@
+//in this case Ace is given a raw value of 1 so all the remaining types of the enum are assigned a number in assinged order
 enum Rank: Int {
     case Ace = 1
     case Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten
     case Jack, Queen, King
+    
     func simpleDescription() -> String {
         switch self {
         case .Ace:
